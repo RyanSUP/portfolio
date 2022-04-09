@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="../dist/output.css"> -->
   <link rel="stylesheet" href="../dist/output.css">
   <link rel="stylesheet" href="./styles/heroBG.css">
   <script src="https://kit.fontawesome.com/62f93337e1.js" crossorigin="anonymous"></script>
@@ -15,21 +16,12 @@
 </head>
 
 <body class="bg-white text-murica">
-  <!-- NAVBAR -->
-  <nav class="w-full fixed flex justify-between bg-murica p-1 text-white">
-    <a class="font-lobster text-2xl mx-3" href="#">Ryan Morici</a>
-    <!-- Socials -->
-    <div class="text-3xl">
-      <a target="_blank" href="https://www.linkedin.com/in/ryanmorici/" class="mx-3"><i class="fa-brands hover:text-salmon fa-linkedin"></i></a>
-      <a target="_blank" href="https://github.com/RyanSUP" class="mx-3"><i class="fa-brands hover:text-salmon fa-github-square"></i></a>
-    </div>
-  </nav>
   <!-- LANDING -->
   <section class="grid grid-cols-1 hero-bg-gears h-screen pt-11 md:grid-cols-2 ">
     <!-- Left Col -->
-    <div class="">
+    <div>
       <!-- Avatar & Tech Bubbles -->
-      <div class="w-40 mt-20 mb-8 mx-auto relative md:scale-[1.75] md:mt-56">
+      <div class="w-40 mt-14 mb-8 mx-auto relative md:scale-[1.75] md:mt-56">
           <!-- Mongo -->
           <img class="w-24 absolute top-10 -left-20" src="../images/Logos/MongoDB_Logo_RGB_Logomark_Spring-Green.svg">
           <!-- Express -->
@@ -40,14 +32,22 @@
           <i class="text-6xl text-cyan-300 absolute bottom-10 -right-20  fa-brands fa-react"></i>
           <!-- Node -->
           <img class="w-20 absolute -right-16 -top-5" src="../images/Logos/Node.svg">
+          <!-- Postgres -->
+          <img class="w-20 absolute -top-16 -right-10" src="../images/Logos/postgresql-logo.png">
           <!-- HTML -->
           <i class="text-5xl text-orange-400 absolute -bottom-16 right-5 fa-brands fa-html5"></i>
           <!-- CSS -->
           <i class="text-6xl text-blue-600 rotate-6 absolute -bottom-10 -right-10 fa-brands fa-css3-alt"></i>
+          <!-- Tailwind -->
+          <img class="w-16 absolute rounded-full -left-16 -top-20" src="../images/Logos/tailwind-logo.jpeg">
           <!-- JS -->
           <i class="text-6xl text-yellow-400 absolute -rotate-12 -left-16 -top-5  fa-brands fa-js"></i>
+          <!-- Python -->
+          <i class="text-4xl text-slate-900 absolute -top-10 fa-brands fa-python"></i>
           <!-- Mongoose -->
           <img class="w-20 absolute -bottom-20" src="../images/Logos/mongoose.png">
+          <!-- Airtable -->
+          <img class="w-14 rounded-full absolute -left-16 -bottom-24" src="../images/Logos/airtable.png">
           <!-- Github -->
           <i class="text-5xl text-slate-800 absolute -bottom-24 -right-10 fa-brands fa-github"></i>
           <!-- Avatar -->
@@ -55,11 +55,11 @@
         </div>
     </div>
     <!-- Right Col -->
-    <div class="md:grid md:grid-cols-3"> 
+    <div> 
       <!-- Left inner col -->
       <!-- Name and title -->
-      <div class="md:flex md:flex-col md:justify-center md:col-span-2">
-        <div class="font-lobster text-8xl text-center text-murica md:[width:fit-content] md:text-9xl">
+      <div class="mt-10 md:flex md:flex-col md:justify-center md:w-9/12">
+        <div class="font-lobster text-8xl text-center text-murica md:text-9xl">
             <h1> Ryan</h1>
             <h1 class="-mt-4">Morici</h1>
         </div>
@@ -70,10 +70,15 @@
           <br>
           <p class="bg-white">You'll also find me noodling on my acoustic guitar, or at a table playing board games with my people.</p>
         </div>
+            <!-- Socials -->
+        <div class="text-6xl text-center mt-5">
+          <a target="_blank" href="https://www.linkedin.com/in/ryanmorici/" class="mx-3"><i class="fa-brands hover:text-salmon fa-linkedin"></i></a>
+          <a target="_blank" href="https://github.com/RyanSUP" class="mx-3"><i class="fa-brands hover:text-salmon fa-github-square"></i></a>
+        </div>
       </div>
       <!-- Right inner col -->
       <!-- Site map -->
-      <div class="hidden md:block">
+      <div class="hidden">
         <ul>
           <a href="">💊 DR MARIO 2323 💊</a>
           <a href="">🎸 Riffin 🌊</a>
