@@ -17,7 +17,7 @@
 <body class="bg-white text-murica">
   <!-- NAVBAR -->
   <nav class="w-full fixed flex justify-between bg-murica p-1 text-white">
-    <a class="font-bold text-2xl mx-3" href="#">R.MOR</a>
+    <a class="font-lobster text-2xl mx-3" href="#">Ryan Morici</a>
     <!-- Socials -->
     <div class="text-3xl">
       <a target="_blank" href="https://www.linkedin.com/in/ryanmorici/" class="mx-3"><i class="fa-brands hover:text-salmon fa-linkedin"></i></a>
@@ -25,11 +25,11 @@
     </div>
   </nav>
   <!-- LANDING -->
-  <section class="grid grid-cols-1 hero-bg h-screen pt-11 md:grid-cols-2 ">
+  <section class="grid grid-cols-1 hero-bg-gears h-screen pt-11 md:grid-cols-2 ">
     <!-- Left Col -->
     <div class="">
       <!-- Avatar & Tech Bubbles -->
-      <div class="w-40 mt-20 mb-8 mx-auto relative md:w-80 ">
+      <div class="w-40 mt-20 mb-8 mx-auto relative md:scale-[1.75] md:mt-56">
           <!-- Mongo -->
           <img class="w-24 absolute top-10 -left-20" src="../images/Logos/MongoDB_Logo_RGB_Logomark_Spring-Green.svg">
           <!-- Express -->
@@ -55,20 +55,31 @@
         </div>
     </div>
     <!-- Right Col -->
-    <div class=""> 
+    <div class="md:grid md:grid-cols-3"> 
+      <!-- Left inner col -->
       <!-- Name and title -->
-      <div class="font-lobster text-8xl text-center text-murica md:[width:fit-content]">
-          <h1 class="mb-0"> Ryan</h1>
-          <h1 class="-mt-4">Morici</h1>
+      <div class="md:flex md:flex-col md:justify-center md:col-span-2">
+        <div class="font-lobster text-8xl text-center text-murica md:[width:fit-content] md:text-9xl">
+            <h1> Ryan</h1>
+            <h1 class="-mt-4">Morici</h1>
+        </div>
+        <p class="text-2xl font-bold text-center text-salmon underline decoration-murica">A Full Stack Developer</p>
+        <!-- brand -->
+        <div class="hidden text-2xl md:block md:mt-8">
+          <p class="bg-white">I like keeping things neat with testable, composable code. I'm looking forward to gettting my hands dirty with Jest testing, Socket.io and more React. I learned Tailwind by building this site and -- oof --  utility-first CSS is 😙🤌.</p>
+          <br>
+          <p class="bg-white">You'll also find me noodling on my acoustic guitar, or at a table playing board games with my people.</p>
+        </div>
       </div>
-      <p class="text-xl font-bold text-center md:text-left">Full Stack Developer</p>
-      <!-- brand -->
-      <div class="hidden text-xl md:block">
-        <p>I like keeping things neat with testable, composable code - functional programming is the Bee's knees.</p>
-        <br>
-        <p>You can also find me noodling on my Strat or at a table playing board games with my people.</p>
+      <!-- Right inner col -->
+      <!-- Site map -->
+      <div class="hidden md:block">
+        <ul>
+          <a href="">💊 DR MARIO 2323 💊</a>
+          <a href="">🎸 Riffin 🌊</a>
+          <a href="">📌 Tic-Tac-Severed Toe 🤔</a>
+        </ul>
       </div>
-
     </div>
   </section>
 </body>
