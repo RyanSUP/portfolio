@@ -95,6 +95,11 @@ const init = () => {
   fillTextArea(dashGrid, '-')
 }
 
+const initToBackInBlack = () => {
+  inputGrid.value = '                          3p0           \n     3 3 3 3                  3p0       \n     2 2 2 2   2 2 2 2            2^4p0 \n 2   0 0 0 0   2 2 2 2                  \n 2             0 0 0 0                  \n 0                                      '
+  dashGrid.value = '--------------------------   -----------\n----- - - - ------------------   -------\n----- - - - --- - - - ------------     -\n- --- - - - --- - - - ------------------\n- ------------- - - - ------------------\n- --------------------------------------'
+}
+
 /* ----------- EVENT HANDLERS ------------ */
 
 function handleAddCharacter(character) {
@@ -146,4 +151,4 @@ resetBtn.addEventListener('click', () => init())
 
 /* ----------- MAIN ------------ */
 
-init()
+initToBackInBlack()
