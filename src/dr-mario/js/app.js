@@ -297,6 +297,7 @@ class PlayerNodes {
 document.addEventListener('keydown', handleKeyPress);
 
 function handleKeyPress(evt) {
+    evt.preventDefault()
     if(evt.code === 'Space' && startButton.style.visibility === 'hidden') { //  hacky way around not letting the player pause while in a menu
         gamePaused = !gamePaused
         if(gamePaused) {
