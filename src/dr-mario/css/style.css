@@ -260,6 +260,7 @@ section.board-overlay {
     color: white;
     font-size: 2rem;
     margin: 0 0 15px;
+    padding: 2px;
 }
 
 .repo-link {

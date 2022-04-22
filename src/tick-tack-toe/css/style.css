@@ -1,0 +1,139 @@
+/* https://coolors.co/palette/d9ffee-a5ffd6-84dcc6-ff686b-ffa69e-ffddd9 */
+
+body {
+  text-align: center;
+  background-color: #84dcc6;
+	/* Use a system font, if none are available use an available sans-sarif   font */
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#message {
+  margin: 80px 0 16px 0;
+  font-size: 50px;
+  color: snow;
+  font-family: 'Lobster', cursive;
+  /* Setting a height stop some of the elements from shimmying */
+  height: 68px;
+}
+
+.stage img{
+  margin: 0 20px;
+  padding-bottom: 5px;
+  width: 96px;
+}
+
+.avatar {
+  
+  cursor: pointer;
+}
+
+#replay {
+  visibility: hidden;
+  background: none;
+  border: none;
+  font-size: 26px;
+  font-family: 'Lobster', cursive;
+  margin: 0 auto 20px;
+  color: snow;
+  width: 150px;
+  cursor: pointer;
+}
+
+.stage {
+  position: relative;
+  margin: 0 0 15px;
+}
+
+.crown img {
+  width: 54px;
+  padding: 0;
+}
+
+.crown {
+  position: absolute;
+  left: 50%;
+  top: -48px;
+  transform: translate(-50%, 0);
+  width: 100%;
+}
+
+.ties {
+  position: absolute;
+  top: 15px;
+  transform: translate(-50%, 0);
+  width: 100%;
+}
+
+section.board {
+  margin: 0 auto;
+  border: 4px solid snow;
+  padding: 5px;
+  display: grid;
+  grid-template-rows: repeat(3, 12vmin);
+  grid-template-columns: repeat(3, 12vmin);
+  grid-gap: 0.5vmin;
+}
+
+.sq {
+  background-color: snow;
+  /* Can't see the border unless hovering. */
+  /* If the border is only in the hover, the contained image will shift a little, */
+  /* putting border here prevents that. */
+  border: 4px solid snow;
+  font-size: 8vmin;
+}
+
+span {
+  color: #ff686b;
+}
+
+.sq:hover {
+  background-color: inherit;
+}
+
+.player-avatar {
+  vertical-align: middle;
+  width: 80%;
+}
+
+footer {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+
+a {
+  color: snow;
+  font-family: 'Lobster', cursive;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.return-to-game {
+  margin: 80px;
+  color: snow;
+  font-family: 'Lobster', cursive;
+  text-decoration: underline;
+  font-size: 34px;
+}
+
+/* Portfolio styles */
+.portfolio-link {
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: underline;
+}
+
+.portfolio-link:hover {
+  font-size: 24px;
+}
+
+.portfolio-text {
+  margin-top: 40px;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+}
