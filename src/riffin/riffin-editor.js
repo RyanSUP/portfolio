@@ -2,6 +2,7 @@
 
 const inputGrid = document.querySelector('#riffin-editor-inputGrid')
 const dashGrid = document.querySelector('#riffin-editor-dashGrid')
+const resetBtn = document.querySelector('#reset-btn')
 
 const firstColumnIndexes = [0, 41, 82, 123, 164, 205]
 const lastColumnIndexes =  [40, 81, 122, 163, 204]
@@ -39,6 +40,7 @@ const arrows = {
 /* ----------- UTILITY FUNCTIONS ------------ */
 
 const fillTextArea = (textArea, c) => {
+  textArea.value = ''
   for(let i = 0; i < 240; i++) {
     if(i%40 === 0 && i !== 0) textArea.value += '\n'
     textArea.value += c
@@ -139,6 +141,8 @@ inputGrid.addEventListener('keydown', e => {
 })
 
 inputGrid.addEventListener('paste', e => e.preventDefault())
+
+resetBtn.addEventListener('click', () => init())
 
 /* ----------- MAIN ------------ */
 
