@@ -274,7 +274,3 @@ section.board-overlay {
 .repo-link:hover {
     color: var(--title-color)
 }
-
-.nav-gap {
-    margin-top: 2.5rem;
-}
