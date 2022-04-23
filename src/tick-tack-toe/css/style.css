@@ -137,3 +137,7 @@ a {
   font-family: 'Roboto Mono', monospace;
   color: white;
 }
+
+.nav-gap {
+  margin-top: 2.5rem;
+}
