@@ -10,11 +10,15 @@ module.exports = {
         'nord-0': '#2E3440',
         'nord-2': '#434C5E',
         'nord-frost': '#8FBCBB',
+        'dr-mario-bg': '#0b042e'
       },
       fontFamily: {
         'lobster': ['Lobster', 'cursive'],
         'roboto-mono': ['Roboto Mono', 'monospace'],
         'ultra': ['Ultra', 'serif'],
+      },
+      backgroundImage: {
+        'dr-mario-space-pattern': "url(/src/dr-mario/images/Space-Background.png)"
       },
     },
   },
