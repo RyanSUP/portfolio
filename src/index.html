@@ -21,11 +21,11 @@
 <body class="bg-white text-murica">
   <!-- LANDING -->
   <div class="snap-y snap-mandatory h-screen overflow-scroll scroll-smooth">
-    <section class="grid grid-cols-1 hero-bg-gears h-screen pt-11 md:grid-cols-2 snap-start">
+    <section class="grid grid-cols-1 hero-bg-gears h-screen pt-11 lg:grid-cols-2 snap-start">
       <!-- Left Col -->
       <div>
         <!-- Avatar & Tech Bubbles -->
-        <div class="w-40 mt-14 mb-8 mx-auto relative md:scale-[1.75] md:mt-48">
+        <div class="w-40 mt-14 mb-8 mx-auto relative lg:scale-[1.75] lg:mt-48">
             <!-- Mongo -->
             <img class="w-16 absolute top-20 -left-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
 
@@ -67,14 +67,14 @@
       <div> 
         <!-- Left inner col -->
         <!-- Name and title -->
-        <div class="mt-10 md:flex md:flex-col md:justify-center md:w-9/12 md:mt-4">
-          <div class="font-lobster text-8xl text-center text-murica md:text-9xl">
+        <div class="mt-10 lg:flex lg:flex-col lg:justify-center lg:w-9/12 lg:mt-4">
+          <div class="font-lobster text-8xl text-center text-murica lg:text-9xl">
               <h1>Ryan</h1>
               <h1 class="-mt-4">Morici</h1>
           </div>
           <h2 class="text-2xl font-bold text-center text-salmon underline decoration-murica m-8">A Full Stack Developer</h2>
           <!-- brand -->
-          <div class="hidden md:block md:mt-4">
+          <div class="hidden lg:block lg:mt-4">
             <p class="bg-white text-2xl text-center">I build cool things and make them look pretty.</p>
             <p class="bg-white text-2xl text-center">Scroll down and check them out!</p>
           </div>
@@ -89,32 +89,32 @@
     <!-- Riffin -->
     <section class="snap-start" id="riffin">
       <!-- Interactive Desktop -->
-      <iframe class="h-screen w-full hidden md:block" src="./riffin/index.html" frameborder="0"></iframe>
+      <iframe class="h-screen w-full hidden lg:block" src="./riffin/index.html" frameborder="0"></iframe>
       <!-- Mobile -->
-      <div class="h-screen flex riffin-bg-waves flex-col justify-between md:hidden bg-nord-0 pt-6">
+      <div class="h-screen flex riffin-bg-waves flex-col justify-between lg:hidden bg-nord-0 pt-6">
         <h1 class="text-nord-frost font-ultra text-6xl text-center">Riffin</h1>
         <p class="font-roboto-mono text-nord-frost w-11/12 mx-auto ">
           Riffin is a MERN stack web app where guitarists can write, save and share tablature. I built a tablature editor with JavaScript to handle those pesky dashes, and designed it to make the notes pop. Due to the nature of this site, it is best viewed on desktop.</p>
-        <img src="./images/Demo images/riffin-demo.png" alt="riffin demo">
+        <img class='md:w-96 self-center' src="./images/Demo images/riffin-demo.png" alt="riffin demo">
         <ul class="font-roboto-mono text-nord-frost underline text-center mb-6">
-          <li class="m-4">
+          <li class="m-2">
             <a class="hover:text-salmon" target=blank href="https://github.com/RyanSUP/riffin-editor"><i class="fa-brands fa-github"></i>Editor repo (open source!)</a>
           </li>
-          <li class="m-4">
+          <li class="m-2">
             <a class="hover:text-salmon" target=blank href="https://github.com/RyanSUP/riffin"><i class="fa-brands fa-github"></i>Project repo</a>
           </li>
-          <li class="m-4">
+          <li class="m-2">
             <a class="hover:text-salmon" target=blank href="https://riffin.herokuapp.com/">🚀Deployed site</a>
           </li>
         </ul>
       </div>
     </section>
     <!-- Dr Mario -->
-    <section class="hidden md:block snap-start" id="dr-mario">
+    <section class="hidden lg:block snap-start" id="dr-mario">
       <iframe class="h-screen w-full" src="./dr-mario/index.html" frameborder="0"></iframe>
     </section>
     <!-- TTT -->
-    <section class="hidden md:block snap-start" id="ttt">
+    <section class="hidden lg:block snap-start" id="ttt">
       <iframe class="h-screen w-full" src="./tick-tack-toe/index.html" frameborder="0"></iframe>
     </section>
   </div>
