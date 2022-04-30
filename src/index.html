@@ -12,6 +12,7 @@
   <!-- <link rel="stylesheet" href="./styles/build.css"> -->
   <link rel="stylesheet" href="../dist/output.css">
   <link rel="stylesheet" href="./styles/heroBG.css">
+  <link rel="stylesheet" href="./styles/riffinBG.css">
   <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico"/>
   <script src="https://kit.fontawesome.com/62f93337e1.js" crossorigin="anonymous"></script>
   <title>Ryan Morici</title>
@@ -86,8 +87,27 @@
       </div>
     </section>
     <!-- Riffin -->
-    <section class="hidden md:block md:snap-start" id="riffin">
-      <iframe class="h-screen w-full" src="./riffin/index.html" frameborder="0"></iframe>
+    <section class="snap-start" id="riffin">
+      <!-- Interactive Desktop -->
+      <iframe class="h-screen w-full hidden md:block" src="./riffin/index.html" frameborder="0"></iframe>
+      <!-- Mobile -->
+      <div class="h-screen flex riffin-bg-waves flex-col justify-between md:hidden bg-nord-0 pt-6">
+        <h1 class="text-nord-frost font-ultra text-6xl text-center">Riffin</h1>
+        <p class="font-roboto-mono text-nord-frost w-11/12 mx-auto ">
+          Riffin is a MERN stack web app where guitarists can write, save and share tablature. I built a tablature editor with JavaScript to handle those pesky dashes, and designed it to make the notes pop. Due to the nature of this site, it is best viewed on desktop.</p>
+        <img src="./images/Demo images/riffin-demo.png" alt="riffin demo">
+        <ul class="font-roboto-mono text-nord-frost underline text-center mb-6">
+          <li class="m-4">
+            <a class="hover:text-salmon" target=blank href="https://github.com/RyanSUP/riffin-editor"><i class="fa-brands fa-github"></i>Editor repo (open source!)</a>
+          </li>
+          <li class="m-4">
+            <a class="hover:text-salmon" target=blank href="https://github.com/RyanSUP/riffin"><i class="fa-brands fa-github"></i>Project repo</a>
+          </li>
+          <li class="m-4">
+            <a class="hover:text-salmon" target=blank href="https://riffin.herokuapp.com/">🚀Deployed site</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- Dr Mario -->
     <section class="hidden md:block snap-start" id="dr-mario">
