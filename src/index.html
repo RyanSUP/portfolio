@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono&family=Ultra&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/build.css">
-  <!-- <link rel="stylesheet" href="../dist/output.css"> -->
+  <!-- <link rel="stylesheet" href="./styles/build.css"> -->
+  <link rel="stylesheet" href="../dist/output.css">
   <link rel="stylesheet" href="./styles/heroBG.css">
   <link rel="stylesheet" href="./styles/riffinBG.css">
   <link rel="shortcut icon" type="image/jpg" href="./images/favicon.ico"/>
@@ -20,12 +20,12 @@
 
 <body class="bg-white text-murica">
   <!-- LANDING -->
-  <div class="snap-y snap-mandatory h-screen overflow-scroll scroll-smooth">
-    <section class="grid grid-cols-1 hero-bg-gears h-screen pt-11 lg:grid-cols-2 snap-start">
+  <div class="snap-y snap-mandatory lg:h-screen overflow-scroll scroll-smooth">
+    <section class="grid grid-cols-1 hero-bg-gears h-fit lg:h-screen pt-11 lg:grid-cols-2 snap-start">
       <!-- Left Col -->
       <div>
         <!-- Avatar & Tech Bubbles -->
-        <div class="w-40 mt-14 mb-8 mx-auto relative lg:scale-[1.75] lg:mt-48">
+        <div class="w-36 my-20 mx-auto relative lg:scale-[1.75] lg:mt-48">
             <!-- Mongo -->
             <img class="w-16 absolute top-20 -left-20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
 
@@ -67,19 +67,19 @@
       <div> 
         <!-- Left inner col -->
         <!-- Name and title -->
-        <div class="mt-10 lg:flex lg:flex-col lg:justify-center lg:w-9/12 lg:mt-4">
+        <div class="my-10 lg:flex lg:flex-col lg:justify-center lg:w-9/12 lg:mt-4">
           <div class="font-lobster text-8xl text-center text-murica lg:text-9xl">
               <h1>Ryan</h1>
               <h1 class="-mt-4">Morici</h1>
           </div>
-          <h2 class="text-2xl font-bold text-center text-salmon underline decoration-murica m-8">A Full Stack Developer</h2>
+          <h2 class="text-xl m-0 font-bold text-center text-salmon underline decoration-murica lg:m-8">A Full Stack Developer</h2>
           <!-- brand -->
           <div class="mt-4">
-            <p class="bg-white text-2xl text-center">I build cool things and make them look pretty.</p>
-            <p class="bg-white text-2xl text-center">Scroll down and check them out!</p>
+            <p class="bg-white text-xl lg:text-2xl text-center">I build cool things and make them look pretty.</p>
+            <p class="bg-white text-xl lg:text-2xl text-center">Scroll down and check them out!</p>
           </div>
           <!-- Socials -->
-          <div class="text-6xl text-center m-8">
+          <div class="text-4xl lg:text-6xl text-center m-8">
             <a target="_blank" href="https://www.linkedin.com/in/ryanmorici/" class="mx-3"><i class="fa-brands hover:text-salmon fa-linkedin"></i></a>
             <a target="_blank" href="./Ryan_Morici_Portfolio_Resume.pdf" class="mx-3"><i class="fa-solid hover:text-salmon fa-file"></i></a>
             <a target="_blank" href="https://github.com/RyanSUP" class="mx-3"><i class="fa-brands hover:text-salmon fa-github-square"></i></a>
@@ -92,12 +92,12 @@
       <!-- Interactive Desktop -->
       <iframe class="h-screen w-full hidden lg:block" src="./riffin/index.html" frameborder="0"></iframe>
       <!-- Mobile -->
-      <div class="h-screen flex riffin-bg-waves flex-col justify-between lg:hidden bg-nord-0 pt-6">
-        <h1 class="text-nord-frost font-ultra text-6xl text-center">Riffin</h1>
-        <p class="font-roboto-mono text-nord-frost w-11/12 mx-auto ">
+      <div class="h-fit lg:h-screen flex riffin-bg-waves flex-col justify-between lg:hidden bg-nord-0">
+        <h1 class="my-12 text-nord-frost font-ultra text-6xl text-center">Riffin</h1>
+        <p class="font-roboto-mono text-nord-frost w-11/12 mx-auto mb-12">
           Riffin is a MERN stack web app where guitarists can write, save and share tablature. I built a tablature editor with JavaScript to handle those pesky dashes, and designed it to make the notes pop. Due to the nature of this site, it is best viewed on desktop.</p>
         <img class='sm:w-96 self-center' src="./images/demo-images/riffin-demo.png" alt="riffin demo">
-        <ul class="font-roboto-mono text-nord-frost underline text-center mb-6">
+        <ul class="my-12 font-roboto-mono text-nord-frost underline text-center">
           <li class="m-2">
             <a class="hover:text-salmon" target=blank href="https://github.com/RyanSUP/riffin-editor"><i class="fa-brands fa-github"></i>Editor repo (open source!)</a>
           </li>
@@ -115,13 +115,15 @@
       <!-- Interactive Desktop -->
       <iframe class="h-screen w-full hidden lg:block" src="./dr-mario/index.html" frameborder="0"></iframe>
       <!-- Mobile -->
-      <div class="h-screen flex flex-col justify-around bg-dr-mario-bg lg:hidden">
-        <img class="w-80 self-center" src="./images/demo-images/dr-mario-title.png" alt="dr mario title">
-        <p class="font-roboto-mono text-white w-11/12 mx-auto ">
+      <div class="h-fit lg:h-screen flex flex-col justify-around bg-dr-mario-bg lg:hidden">
+        <img class="my-12 w-80 self-center" src="./images/demo-images/dr-mario-title.png" alt="dr mario title">
+        <p class="font-roboto-mono text-white w-11/12 mx-auto mb-12">
           A futuristic take on Nintendo's classic block-falling game. I built this with JavaScript using pure DOM manipualtion, no canvas here. Everything on the board is HTML and CSS. Some other fun features include an audio player and menu overlays.</p>
         <img class="sm:w-96 self-center" src="./images/demo-images/dr-mario-demo.png" alt="dr mario demo">
-        <a target=blank class="font-roboto-mono text-white underline text-center m-1" href="https://github.com/RyanSUP/dr-mario-clone"><i class="fa-brands fa-github"></i>Project repo</a>
-        <p class="font-roboto-mono text-white underline text-center m-1">🚀Deployed site (desktop only)</p>
+        <div class="text-center my-12">
+          <a target=blank class="font-roboto-mono text-white underline text-center m-1" href="https://github.com/RyanSUP/dr-mario-clone"><i class="fa-brands fa-github"></i>Project repo</a>
+          <p class="font-roboto-mono text-white underline text-center m-1">🚀Deployed site (desktop only)</p>
+        </div>
       </div>
     </section>
     <!-- TTT -->
